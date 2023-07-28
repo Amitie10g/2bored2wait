@@ -59,14 +59,14 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@rob9315/mcproxy@^0.3":
-  version "0.3.1"
-  resolved "https://registry.npmjs.org/@rob9315/mcproxy/-/mcproxy-0.3.1.tgz"
+"@rob9315/mcproxy@^1.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@rob9315/mcproxy/-/mcproxy-1.0.0.tgz#fb3e4d49ee6bc3f85f04070bf02c089a433c8e24"
   dependencies:
-    minecraft-data "^2.119.1"
+    minecraft-data "^3.0.0"
     minecraft-protocol "^1.32.0"
     mineflayer "^4.1.0"
-    prismarine-item "^1.11.2"
+    prismarine-item "^1.11.5"
     smart-buffer "^4.2.0"
 
 "@sapphire/async-queue@^1.3.1":
@@ -1179,7 +1179,7 @@ mimic-response@^3.1.0:
   version "3.1.0"
   resolved "https://registry.npmjs.org/mimic-response/-/mimic-response-3.1.0.tgz"
 
-minecraft-data@^2.119.1, minecraft-data@^2.93.0:
+minecraft-data@^2.93.0:
   version "2.221.0"
   resolved "https://registry.npmjs.org/minecraft-data/-/minecraft-data-2.221.0.tgz"
 
@@ -1748,6 +1748,16 @@ seek-bzip@^1.0.5:
 semver@^5.6.0:
   version "5.7.2"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.7.2.tgz#48d55db737c3287cd4835e17fa13feace1c41ef8"
+
+semver@^7.3.5:
+  version "7.5.4"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-7.5.4.tgz#483986ec4ed38e1c6c48c34894a9182dbff68a6e"
+  dependencies:
+    lru-cache "^6.0.0"
+
+shellwords@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/shellwords/-/shellwords-0.1.1.tgz#d6b9181c1a48d397324c84871efbcfc73fc0654b"
 
 semver@^7.3.5:
   version "7.5.4"
