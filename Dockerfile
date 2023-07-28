@@ -1,4 +1,4 @@
-FROM node:testing
+FROM node:slim
 
 LABEL maintainer="mrgeorgen"
 LABEL name="2bored2wait"
