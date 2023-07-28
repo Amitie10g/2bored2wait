@@ -41,6 +41,6 @@
     "node-notifier": "^10.0.1"
   },
   "devDependencies": {
-    "nexe": "^4.0.0-beta.18"
+    "nexe": "^4.0.0-rc.2"
   }
 }
