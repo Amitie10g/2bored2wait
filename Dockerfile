@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:testing
 
 LABEL maintainer="mrgeorgen"
 LABEL name="2bored2wait"
