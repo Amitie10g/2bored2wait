@@ -35,7 +35,7 @@
     "minecraft-protocol": "^1.43.2",
     "mineflayer-antiafk": "^1.1.1",
     "node-json-minify": "^3.0.0",
-    "open": "^8.0.7",
+    "open": "^9.1.0",
     "particles.js": "^2.0.0",
     "rss-parser": "^3.13.0",
     "node-notifier": "^10.0.1"
