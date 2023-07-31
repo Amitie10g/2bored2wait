@@ -20,20 +20,59 @@
   version "1.3.1"
   resolved "https://registry.npmjs.org/@calebboyd/semaphore/-/semaphore-1.3.1.tgz"
 
-"@discordjs/builders@^0.13.0":
-  version "0.13.0"
-  resolved "https://registry.npmjs.org/@discordjs/builders/-/builders-0.13.0.tgz"
+"@discordjs/builders@^1.6.4":
+  version "1.6.4"
+  resolved "https://registry.yarnpkg.com/@discordjs/builders/-/builders-1.6.4.tgz#d99f4e76684ef9b1c3b9e1c4d0bc17fafb19b960"
   dependencies:
-    "@sapphire/shapeshift" "^2.0.0"
-    "@sindresorhus/is" "^4.6.0"
-    discord-api-types "^0.31.1"
+    "@discordjs/formatters" "^0.3.1"
+    "@discordjs/util" "^1.0.0"
+    "@sapphire/shapeshift" "^3.9.2"
+    discord-api-types "^0.37.50"
     fast-deep-equal "^3.1.3"
-    ts-mixer "^6.0.1"
-    tslib "^2.3.1"
+    ts-mixer "^6.0.3"
+    tslib "^2.6.1"
 
-"@discordjs/collection@^0.6.0":
-  version "0.6.0"
-  resolved "https://registry.npmjs.org/@discordjs/collection/-/collection-0.6.0.tgz"
+"@discordjs/collection@^1.5.2":
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/@discordjs/collection/-/collection-1.5.2.tgz#3ba34c216e920999b5075f8fdc62f70bb2a7e0fb"
+
+"@discordjs/formatters@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@discordjs/formatters/-/formatters-0.3.1.tgz#81393cf25e6e3223361061629752ea727475e842"
+  dependencies:
+    discord-api-types "^0.37.41"
+
+"@discordjs/rest@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@discordjs/rest/-/rest-2.0.0.tgz#d82d4035d93bc860f9f34b07af3178dc12a296c4"
+  dependencies:
+    "@discordjs/collection" "^1.5.2"
+    "@discordjs/util" "^1.0.0"
+    "@sapphire/async-queue" "^1.5.0"
+    "@sapphire/snowflake" "^3.5.1"
+    "@vladfrangu/async_event_emitter" "^2.2.2"
+    discord-api-types "^0.37.50"
+    magic-bytes.js "^1.0.15"
+    tslib "^2.6.1"
+    undici "^5.22.1"
+
+"@discordjs/util@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@discordjs/util/-/util-1.0.0.tgz#8b4d3756ee725f6fc1a4999834d6ca7c4a353837"
+
+"@discordjs/ws@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@discordjs/ws/-/ws-1.0.0.tgz#99b6aef63374ae406b481fae2e76a2666e95a1c6"
+  dependencies:
+    "@discordjs/collection" "^1.5.2"
+    "@discordjs/rest" "^2.0.0"
+    "@discordjs/util" "^1.0.0"
+    "@sapphire/async-queue" "^1.5.0"
+    "@types/ws" "^8.5.5"
+    "@vladfrangu/async_event_emitter" "^2.2.2"
+    discord-api-types "^0.37.50"
+    tslib "^2.6.1"
+    ws "^8.13.0"
 
 "@folder/xdg@^3.1.2":
   version "3.1.2"
@@ -69,19 +108,26 @@
     prismarine-item "^1.11.2"
     smart-buffer "^4.2.0"
 
-"@sapphire/async-queue@^1.3.1":
-  version "1.3.1"
-  resolved "https://registry.npmjs.org/@sapphire/async-queue/-/async-queue-1.3.1.tgz"
+"@sapphire/async-queue@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/async-queue/-/async-queue-1.5.0.tgz#2f255a3f186635c4fb5a2381e375d3dfbc5312d8"
 
-"@sapphire/shapeshift@^2.0.0":
-  version "2.2.0"
-  resolved "https://registry.npmjs.org/@sapphire/shapeshift/-/shapeshift-2.2.0.tgz"
+"@sapphire/shapeshift@^3.9.2":
+  version "3.9.2"
+  resolved "https://registry.yarnpkg.com/@sapphire/shapeshift/-/shapeshift-3.9.2.tgz#a9c12cd51e1bc467619bb56df804450dd14871ac"
+  dependencies:
+    fast-deep-equal "^3.1.3"
+    lodash "^4.17.21"
+
+"@sapphire/snowflake@^3.5.1":
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/@sapphire/snowflake/-/snowflake-3.5.1.tgz#254521c188b49e8b2d4cc048b475fb2b38737fec"
 
 "@sindresorhus/is@^0.7.0":
   version "0.7.0"
   resolved "https://registry.npmjs.org/@sindresorhus/is/-/is-0.7.0.tgz"
 
-"@sindresorhus/is@^4.0.0", "@sindresorhus/is@^4.6.0":
+"@sindresorhus/is@^4.0.0":
   version "4.6.0"
   resolved "https://registry.npmjs.org/@sindresorhus/is/-/is-4.6.0.tgz"
 
@@ -114,13 +160,6 @@
   dependencies:
     "@types/node" "*"
 
-"@types/node-fetch@^2.6.1":
-  version "2.6.1"
-  resolved "https://registry.npmjs.org/@types/node-fetch/-/node-fetch-2.6.1.tgz"
-  dependencies:
-    "@types/node" "*"
-    form-data "^3.0.0"
-
 "@types/node@*":
   version "17.0.36"
   resolved "https://registry.npmjs.org/@types/node/-/node-17.0.36.tgz"
@@ -138,11 +177,15 @@
   dependencies:
     "@types/node" "*"
 
-"@types/ws@^8.5.3":
-  version "8.5.3"
-  resolved "https://registry.npmjs.org/@types/ws/-/ws-8.5.3.tgz"
+"@types/ws@^8.5.5":
+  version "8.5.5"
+  resolved "https://registry.yarnpkg.com/@types/ws/-/ws-8.5.5.tgz#af587964aa06682702ee6dcbc7be41a80e4b28eb"
   dependencies:
     "@types/node" "*"
+
+"@vladfrangu/async_event_emitter@^2.2.2":
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/@vladfrangu/async_event_emitter/-/async_event_emitter-2.2.2.tgz#84c5a3f8d648842cec5cc649b88df599af32ed88"
 
 "@xboxreplay/errors@^0.1.0":
   version "0.1.0"
@@ -230,10 +273,6 @@ asn1@0.2.3:
   version "0.2.3"
   resolved "https://registry.npmjs.org/asn1/-/asn1-0.2.3.tgz"
 
-asynckit@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.npmjs.org/asynckit/-/asynckit-0.4.0.tgz"
-
 axios@^0.21.1, axios@^0.21.4:
   version "0.21.4"
   resolved "https://registry.npmjs.org/axios/-/axios-0.21.4.tgz"
@@ -314,6 +353,12 @@ buffer@^5.2.1:
   dependencies:
     base64-js "^1.3.1"
     ieee754 "^1.1.13"
+
+busboy@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/busboy/-/busboy-1.6.0.tgz#966ea36a9502e43cdb9146962523b92f531f6893"
+  dependencies:
+    streamsearch "^1.1.0"
 
 cacheable-lookup@^5.0.3:
   version "5.0.4"
@@ -414,12 +459,6 @@ color-name@1.1.3:
 color-name@~1.1.4:
   version "1.1.4"
   resolved "https://registry.npmjs.org/color-name/-/color-name-1.1.4.tgz"
-
-combined-stream@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.npmjs.org/combined-stream/-/combined-stream-1.0.8.tgz"
-  dependencies:
-    delayed-stream "~1.0.0"
 
 commander@^2.19.0, commander@^2.8.1:
   version "2.20.3"
@@ -543,10 +582,6 @@ define-lazy-prop@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/define-lazy-prop/-/define-lazy-prop-2.0.0.tgz"
 
-delayed-stream@~1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/delayed-stream/-/delayed-stream-1.0.0.tgz"
-
 dir-glob@^3.0.1:
   version "3.0.1"
   resolved "https://registry.npmjs.org/dir-glob/-/dir-glob-3.0.1.tgz"
@@ -557,27 +592,28 @@ discontinuous-range@1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/discontinuous-range/-/discontinuous-range-1.0.0.tgz"
 
-discord-api-types@^0.30.0:
-  version "0.30.0"
-  resolved "https://registry.npmjs.org/discord-api-types/-/discord-api-types-0.30.0.tgz"
+discord-api-types@^0.37.41, discord-api-types@^0.37.50:
+  version "0.37.51"
+  resolved "https://registry.yarnpkg.com/discord-api-types/-/discord-api-types-0.37.51.tgz#a9fe2ceddde1c9c2e4d29987d45241cd746b9319"
 
-discord-api-types@^0.31.1:
-  version "0.31.2"
-  resolved "https://registry.npmjs.org/discord-api-types/-/discord-api-types-0.31.2.tgz"
-
-discord.js@^13.7.0:
-  version "13.7.0"
-  resolved "https://registry.npmjs.org/discord.js/-/discord.js-13.7.0.tgz"
+discord.js@^14.12.0:
+  version "14.12.0"
+  resolved "https://registry.yarnpkg.com/discord.js/-/discord.js-14.12.0.tgz#e476c7f171ecc3add62781583223b522d12bd1fd"
   dependencies:
-    "@discordjs/builders" "^0.13.0"
-    "@discordjs/collection" "^0.6.0"
-    "@sapphire/async-queue" "^1.3.1"
-    "@types/node-fetch" "^2.6.1"
-    "@types/ws" "^8.5.3"
-    discord-api-types "^0.30.0"
-    form-data "^4.0.0"
-    node-fetch "^2.6.1"
-    ws "^8.6.0"
+    "@discordjs/builders" "^1.6.4"
+    "@discordjs/collection" "^1.5.2"
+    "@discordjs/formatters" "^0.3.1"
+    "@discordjs/rest" "^2.0.0"
+    "@discordjs/util" "^1.0.0"
+    "@discordjs/ws" "^1.0.0"
+    "@sapphire/snowflake" "^3.5.1"
+    "@types/ws" "^8.5.5"
+    discord-api-types "^0.37.50"
+    fast-deep-equal "^3.1.3"
+    lodash.snakecase "^4.1.1"
+    tslib "^2.6.1"
+    undici "^5.22.1"
+    ws "^8.13.0"
 
 download@^8.0.0:
   version "8.0.0"
@@ -727,22 +763,6 @@ follow-redirects@^1.14.0:
   version "1.15.1"
   resolved "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.15.1.tgz"
 
-form-data@^3.0.0:
-  version "3.0.1"
-  resolved "https://registry.npmjs.org/form-data/-/form-data-3.0.1.tgz"
-  dependencies:
-    asynckit "^0.4.0"
-    combined-stream "^1.0.8"
-    mime-types "^2.1.12"
-
-form-data@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.npmjs.org/form-data/-/form-data-4.0.0.tgz"
-  dependencies:
-    asynckit "^0.4.0"
-    combined-stream "^1.0.8"
-    mime-types "^2.1.12"
-
 from2@^2.1.1:
   version "2.3.0"
   resolved "https://registry.npmjs.org/from2/-/from2-2.3.0.tgz"
@@ -856,6 +876,10 @@ got@^8.3.1:
 graceful-fs@^4.1.10, graceful-fs@^4.2.4:
   version "4.2.10"
   resolved "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.10.tgz"
+
+growly@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/growly/-/growly-1.3.0.tgz#f10748cbe76af964b7c96c93c6bcc28af120c081"
 
 has-flag@^3.0.0:
   version "3.0.0"
@@ -979,6 +1003,10 @@ isarray@~1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz"
 
+isexe@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
+
 isurl@^1.0.0-alpha5:
   version "1.0.0"
   resolved "https://registry.npmjs.org/isurl/-/isurl-1.0.0.tgz"
@@ -1089,6 +1117,14 @@ lodash.reduce@^4.6.0:
   version "4.6.0"
   resolved "https://registry.npmjs.org/lodash.reduce/-/lodash.reduce-4.6.0.tgz"
 
+lodash.snakecase@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/lodash.snakecase/-/lodash.snakecase-4.1.1.tgz#39d714a35357147837aefd64b5dcbb16becd8f8d"
+
+lodash@^4.17.21:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+
 log-symbols@^2.2.0:
   version "2.2.0"
   resolved "https://registry.npmjs.org/log-symbols/-/log-symbols-2.2.0.tgz"
@@ -1107,6 +1143,12 @@ lowercase-keys@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/lowercase-keys/-/lowercase-keys-2.0.0.tgz"
 
+lru-cache@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-6.0.0.tgz#6d6fe6570ebd96aaf90fcad1dafa3b2566db3a94"
+  dependencies:
+    yallist "^4.0.0"
+
 luxon@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/luxon/-/luxon-3.0.4.tgz#d179e4e9f05e092241e7044f64aaa54796b03929"
@@ -1114,6 +1156,10 @@ luxon@^3.0.4:
 macaddress@^0.5.1:
   version "0.5.2"
   resolved "https://registry.npmjs.org/macaddress/-/macaddress-0.5.2.tgz"
+
+magic-bytes.js@^1.0.15:
+  version "1.0.15"
+  resolved "https://registry.yarnpkg.com/magic-bytes.js/-/magic-bytes.js-1.0.15.tgz#3c9d2b7d45bb8432482646b5f74bbf6725274616"
 
 make-dir@^1.0.0:
   version "1.3.0"
@@ -1143,15 +1189,9 @@ micromatch@^4.0.4:
     braces "^3.0.2"
     picomatch "^2.3.1"
 
-mime-db@1.52.0, mime-db@^1.28.0:
+mime-db@^1.28.0:
   version "1.52.0"
   resolved "https://registry.npmjs.org/mime-db/-/mime-db-1.52.0.tgz"
-
-mime-types@^2.1.12:
-  version "2.1.35"
-  resolved "https://registry.npmjs.org/mime-types/-/mime-types-2.1.35.tgz"
-  dependencies:
-    mime-db "1.52.0"
 
 mimic-fn@^1.0.0:
   version "1.2.0"
@@ -1311,17 +1351,16 @@ node-json-minify@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/node-json-minify/-/node-json-minify-3.0.0.tgz"
 
-"node-notifier@^10.0.1":
-  "integrity" "sha512-YX7TSyDukOZ0g+gmzjB6abKu+hTGvO8+8+gIFDsRCU2t8fLV/P2unmt+LGFaIa4y64aX98Qksa97rgz4vMNeLQ=="
-  "resolved" "https://registry.npmjs.org/node-notifier/-/node-notifier-10.0.1.tgz"
-  "version" "10.0.1"
+node-notifier@^10.0.1:
+  version "10.0.1"
+  resolved "https://registry.npmjs.org/node-notifier/-/node-notifier-10.0.1.tgz"
   dependencies:
-    "growly" "^1.3.0"
-    "is-wsl" "^2.2.0"
-    "semver" "^7.3.5"
-    "shellwords" "^0.1.1"
-    "uuid" "^8.3.2"
-    "which" "^2.0.2"
+    growly "^1.3.0"
+    is-wsl "^2.2.0"
+    semver "^7.3.5"
+    shellwords "^0.1.1"
+    uuid "^8.3.2"
+    which "^2.0.2"
 
 node-rsa@^0.4.2:
   version "0.4.2"
@@ -1728,6 +1767,16 @@ semver@^5.6.0:
   version "5.7.1"
   resolved "https://registry.npmjs.org/semver/-/semver-5.7.1.tgz"
 
+semver@^7.3.5:
+  version "7.5.4"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-7.5.4.tgz#483986ec4ed38e1c6c48c34894a9182dbff68a6e"
+  dependencies:
+    lru-cache "^6.0.0"
+
+shellwords@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/shellwords/-/shellwords-0.1.1.tgz#d6b9181c1a48d397324c84871efbcfc73fc0654b"
+
 signal-exit@^3.0.2:
   version "3.0.7"
   resolved "https://registry.npmjs.org/signal-exit/-/signal-exit-3.0.7.tgz"
@@ -1761,6 +1810,10 @@ sort-keys@^2.0.0:
 sprintf-js@^1.1.2:
   version "1.1.2"
   resolved "https://registry.npmjs.org/sprintf-js/-/sprintf-js-1.1.2.tgz"
+
+streamsearch@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/streamsearch/-/streamsearch-1.1.0.tgz#404dd1e2247ca94af554e841a8ef0eaa238da764"
 
 strict-uri-encode@^1.0.0:
   version "1.1.0"
@@ -1870,13 +1923,13 @@ trim-repeated@^1.0.0:
   dependencies:
     escape-string-regexp "^1.0.2"
 
-ts-mixer@^6.0.1:
-  version "6.0.1"
-  resolved "https://registry.npmjs.org/ts-mixer/-/ts-mixer-6.0.1.tgz"
+ts-mixer@^6.0.3:
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/ts-mixer/-/ts-mixer-6.0.3.tgz#69bd50f406ff39daa369885b16c77a6194c7cae6"
 
-tslib@^2.3.1:
-  version "2.4.0"
-  resolved "https://registry.npmjs.org/tslib/-/tslib-2.4.0.tgz"
+tslib@^2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.6.1.tgz#fd8c9a0ff42590b25703c0acb3de3d3f4ede0410"
 
 tunnel-agent@^0.6.0:
   version "0.6.0"
@@ -1902,6 +1955,12 @@ unbzip2-stream@^1.0.9:
   dependencies:
     buffer "^5.2.1"
     through "^2.3.8"
+
+undici@^5.22.1:
+  version "5.22.1"
+  resolved "https://registry.yarnpkg.com/undici/-/undici-5.22.1.tgz#877d512effef2ac8be65e695f3586922e1a57d7b"
+  dependencies:
+    busboy "^1.6.0"
 
 uri-js@^4.2.2:
   version "4.4.1"
@@ -1929,7 +1988,7 @@ uuid-1345@^1.0.1, uuid-1345@^1.0.2:
   dependencies:
     macaddress "^0.5.1"
 
-uuid@^8.2.0, uuid@^8.3.0:
+uuid@^8.2.0, uuid@^8.3.0, uuid@^8.3.2:
   version "8.3.2"
   resolved "https://registry.npmjs.org/uuid/-/uuid-8.3.2.tgz"
 
@@ -1953,6 +2012,12 @@ whatwg-url@^5.0.0:
   dependencies:
     tr46 "~0.0.3"
     webidl-conversions "^3.0.0"
+
+which@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/which/-/which-2.0.2.tgz#7c6a8dd0a636a0327e10b59c9286eee93f3f51b1"
+  dependencies:
+    isexe "^2.0.0"
 
 widest-line@^3.1.0:
   version "3.1.0"
@@ -1978,9 +2043,9 @@ write@^2.0.0:
   dependencies:
     add-filename-increment "^1.0.0"
 
-ws@^8.6.0:
-  version "8.7.0"
-  resolved "https://registry.npmjs.org/ws/-/ws-8.7.0.tgz"
+ws@^8.13.0:
+  version "8.13.0"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-8.13.0.tgz#9a9fb92f93cf41512a0735c8f4dd09b8a1211cd0"
 
 xml2js@^0.4.19:
   version "0.4.23"
@@ -2000,6 +2065,10 @@ xtend@^4.0.0:
 xxhash-wasm@^0.4.2:
   version "0.4.2"
   resolved "https://registry.npmjs.org/xxhash-wasm/-/xxhash-wasm-0.4.2.tgz"
+
+yallist@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/yallist/-/yallist-4.0.0.tgz#9bb92790d9c0effec63be73519e11a35019a3a72"
 
 yauzl@^2.4.2:
   version "2.10.0"
