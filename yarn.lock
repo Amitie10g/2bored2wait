@@ -619,9 +619,9 @@ endian-toggle@^0.0.0:
   version "0.0.0"
   resolved "https://registry.npmjs.org/endian-toggle/-/endian-toggle-0.0.0.tgz"
 
-enhanced-resolve@^5.9.3:
-  version "5.9.3"
-  resolved "https://registry.npmjs.org/enhanced-resolve/-/enhanced-resolve-5.9.3.tgz"
+enhanced-resolve@^5.12.0:
+  version "5.16.0"
+  resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-5.16.0.tgz#65ec88778083056cb32487faa9aef82ed0864787"
   dependencies:
     graceful-fs "^4.2.4"
     tapable "^2.2.0"
@@ -659,7 +659,17 @@ fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
   version "3.1.3"
   resolved "https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz"
 
-fast-glob@^3.2.11, fast-glob@^3.2.9:
+fast-glob@^3.2.12:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-3.3.2.tgz#a904501e57cfdd2ffcded45e99a54fef55e46129"
+  dependencies:
+    "@nodelib/fs.stat" "^2.0.2"
+    "@nodelib/fs.walk" "^1.2.3"
+    glob-parent "^5.1.2"
+    merge2 "^1.3.0"
+    micromatch "^4.0.4"
+
+fast-glob@^3.2.9:
   version "3.2.11"
   resolved "https://registry.npmjs.org/fast-glob/-/fast-glob-3.2.11.tgz"
   dependencies:
@@ -857,6 +867,10 @@ graceful-fs@^4.1.10, graceful-fs@^4.2.4:
   version "4.2.10"
   resolved "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.10.tgz"
 
+growly@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/growly/-/growly-1.3.0.tgz#f10748cbe76af964b7c96c93c6bcc28af120c081"
+
 has-flag@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/has-flag/-/has-flag-3.0.0.tgz"
@@ -978,6 +992,10 @@ is-wsl@^2.2.0:
 isarray@~1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz"
+
+isexe@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
 
 isurl@^1.0.0-alpha5:
   version "1.0.0"
@@ -1107,6 +1125,12 @@ lowercase-keys@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/lowercase-keys/-/lowercase-keys-2.0.0.tgz"
 
+lru-cache@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-6.0.0.tgz#6d6fe6570ebd96aaf90fcad1dafa3b2566db3a94"
+  dependencies:
+    yallist "^4.0.0"
+
 luxon@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/luxon/-/luxon-3.0.4.tgz#d179e4e9f05e092241e7044f64aaa54796b03929"
@@ -1132,9 +1156,9 @@ merge2@^1.3.0, merge2@^1.4.1:
   version "1.4.1"
   resolved "https://registry.npmjs.org/merge2/-/merge2-1.4.1.tgz"
 
-meriyah@^4.2.1:
-  version "4.2.1"
-  resolved "https://registry.npmjs.org/meriyah/-/meriyah-4.2.1.tgz"
+meriyah@^4.3.3, meriyah@^4.3.5:
+  version "4.4.2"
+  resolved "https://registry.yarnpkg.com/meriyah/-/meriyah-4.4.2.tgz#01fd8850c1985ea57a36ee58560de02dfd762249"
 
 micromatch@^4.0.4:
   version "4.0.5"
@@ -1282,9 +1306,9 @@ nearley@^2.19.5:
     railroad-diagrams "^1.0.0"
     randexp "0.4.6"
 
-nexe@^4.0.0-beta.18:
-  version "4.0.0-rc.1"
-  resolved "https://registry.npmjs.org/nexe/-/nexe-4.0.0-rc.1.tgz"
+nexe@^4.0.0-rc.4:
+  version "4.0.0-rc.4"
+  resolved "https://registry.yarnpkg.com/nexe/-/nexe-4.0.0-rc.4.tgz#7626ee7ca97569096c40b6a2d4a2c9cd2687c2ef"
   dependencies:
     "@calebboyd/semaphore" "^1.3.1"
     app-builder "^7.0.4"
@@ -1293,12 +1317,12 @@ nexe@^4.0.0-beta.18:
     download "^8.0.0"
     globby "^11.0.2"
     got "^11.8.2"
-    meriyah "^4.2.1"
+    meriyah "^4.3.3"
     minimist "^1.2.6"
     mkdirp "^1.0.4"
     multistream "^4.1.0"
     ora "^3.4.0"
-    resolve-dependencies "^6.0.7"
+    resolve-dependencies "^6.0.8"
     rimraf "^3.0.2"
 
 node-fetch@^2.6.1:
@@ -1311,17 +1335,16 @@ node-json-minify@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/node-json-minify/-/node-json-minify-3.0.0.tgz"
 
-"node-notifier@^10.0.1":
-  "integrity" "sha512-YX7TSyDukOZ0g+gmzjB6abKu+hTGvO8+8+gIFDsRCU2t8fLV/P2unmt+LGFaIa4y64aX98Qksa97rgz4vMNeLQ=="
-  "resolved" "https://registry.npmjs.org/node-notifier/-/node-notifier-10.0.1.tgz"
-  "version" "10.0.1"
+node-notifier@^10.0.1:
+  version "10.0.1"
+  resolved "https://registry.npmjs.org/node-notifier/-/node-notifier-10.0.1.tgz"
   dependencies:
-    "growly" "^1.3.0"
-    "is-wsl" "^2.2.0"
-    "semver" "^7.3.5"
-    "shellwords" "^0.1.1"
-    "uuid" "^8.3.2"
-    "which" "^2.0.2"
+    growly "^1.3.0"
+    is-wsl "^2.2.0"
+    semver "^7.3.5"
+    shellwords "^0.1.1"
+    uuid "^8.3.2"
+    which "^2.0.2"
 
 node-rsa@^0.4.2:
   version "0.4.2"
@@ -1652,13 +1675,13 @@ resolve-alpn@^1.0.0:
   version "1.2.1"
   resolved "https://registry.npmjs.org/resolve-alpn/-/resolve-alpn-1.2.1.tgz"
 
-resolve-dependencies@^6.0.7:
-  version "6.0.8"
-  resolved "https://registry.npmjs.org/resolve-dependencies/-/resolve-dependencies-6.0.8.tgz"
+resolve-dependencies@^6.0.8:
+  version "6.0.9"
+  resolved "https://registry.yarnpkg.com/resolve-dependencies/-/resolve-dependencies-6.0.9.tgz#da34d0958783fb7d5d7add9196bd2a1e2797419f"
   dependencies:
-    enhanced-resolve "^5.9.3"
-    fast-glob "^3.2.11"
-    meriyah "^4.2.1"
+    enhanced-resolve "^5.12.0"
+    fast-glob "^3.2.12"
+    meriyah "^4.3.5"
 
 responselike@1.0.2:
   version "1.0.2"
@@ -1727,6 +1750,16 @@ seek-bzip@^1.0.5:
 semver@^5.6.0:
   version "5.7.1"
   resolved "https://registry.npmjs.org/semver/-/semver-5.7.1.tgz"
+
+semver@^7.3.5:
+  version "7.6.0"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-7.6.0.tgz#1a46a4db4bffcccd97b743b5005c8325f23d4e2d"
+  dependencies:
+    lru-cache "^6.0.0"
+
+shellwords@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/shellwords/-/shellwords-0.1.1.tgz#d6b9181c1a48d397324c84871efbcfc73fc0654b"
 
 signal-exit@^3.0.2:
   version "3.0.7"
@@ -1929,7 +1962,7 @@ uuid-1345@^1.0.1, uuid-1345@^1.0.2:
   dependencies:
     macaddress "^0.5.1"
 
-uuid@^8.2.0, uuid@^8.3.0:
+uuid@^8.2.0, uuid@^8.3.0, uuid@^8.3.2:
   version "8.3.2"
   resolved "https://registry.npmjs.org/uuid/-/uuid-8.3.2.tgz"
 
@@ -1953,6 +1986,12 @@ whatwg-url@^5.0.0:
   dependencies:
     tr46 "~0.0.3"
     webidl-conversions "^3.0.0"
+
+which@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/which/-/which-2.0.2.tgz#7c6a8dd0a636a0327e10b59c9286eee93f3f51b1"
+  dependencies:
+    isexe "^2.0.0"
 
 widest-line@^3.1.0:
   version "3.1.0"
@@ -2000,6 +2039,10 @@ xtend@^4.0.0:
 xxhash-wasm@^0.4.2:
   version "0.4.2"
   resolved "https://registry.npmjs.org/xxhash-wasm/-/xxhash-wasm-0.4.2.tgz"
+
+yallist@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/yallist/-/yallist-4.0.0.tgz#9bb92790d9c0effec63be73519e11a35019a3a72"
 
 yauzl@^2.4.2:
   version "2.10.0"
